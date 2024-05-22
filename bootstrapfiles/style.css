@@ -4,6 +4,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    opacity: 0.9;
   }
 
   @media (min-width: 768px) {
@@ -83,9 +84,9 @@
     font-size: 2em;
     position: absolute;
     font-weight: bold;
-    /*background-color: rgba(0, 0, 0, .3);*/
+    /*background-color: rgba(0, 0, 0, .5);*/
     user-select: none;
-    text-shadow: 1px 1px #55595c;
+    text-shadow: 2px 2px #45494c;
     top: 50%;
     left:  50%;
     -webkit-transform: translate(-50%, -50%); /* iOS */
