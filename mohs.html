@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/5.3/examples/album/ -->
+<html lang="en" data-bs-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <script src="./bootstrapfiles/color-modes.js.download"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Kirkland Landry</title>
+
+    <!--<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">-->
+    <link rel="stylesheet" href="./bootstrapfiles/carousel.css">
+    <link href="./bootstrapfiles/bootstrap.min.css" rel="stylesheet">
+
+
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <ul class="navbar-nav mr-auto" style="margin-left: 1rem;">
+          <li class="nav-item active">
+            <!--<a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/carousel/#">Home</a>-->
+            <button type="button" style="font-weight: bold;" class="btn btn-outline-secondary" id="homeBtn" onclick="window.open('index.html','_self')" title="Home">Home</button>
+          </li>
+        </ul>
+    </nav>
+  </header>
+  <body>
+
+  
+      <main role="main">
+  
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+        <div class="container marketing">
+          <hr class="featurette-divider">
+          <!-- Three columns of text below the carousel -->
+          <div class="row" style="text-align: center;">
+            <h1 >MOHS Map Baker</h1>
+            <p>A tool for packing 4 textures into 1.</p>
+          </div><!-- /.row -->
+  
+  
+          <!-- START THE FEATURETTES -->
+  
+          
+            <hr class="featurette-divider" style="margin: 5rem 0 5rem 0;">
+  
+            <div class="row featurette">
+              <div class="col-md-7">
+                <p class="lead">The MOHS Map baker is used for baking 4 black and white textures into 1 rgba texture. It can bake any 4 textures, but is specialized in baking Metallic (R), Occlusion (G), Height (B), and Smoothness/Roughness (A) textures. Right clicking an image in Unity will show a "Bake" option, this will open the texture in the mohs map baker. It the texture's name matches any of the channel names it will then look for other textures within the folder to try and fill each channel for a MOHS map. By default it looks for the Adobe Substance default export names, but will try to look for any similar names that match. One the textures are loaded, for each channel, you can further transform the channel texture by inverting it, adjusting its strength, or bypassing it if you don't want to use it. Once you're done adjusting the channels, you can then save the combined texture. By default, this is located in the first image's folder and named "first texture name_MOHS". Output texture resolution can also be adjusted up or down, within the limit of Unity's supported image sizes.</p>
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto"  onclick="this.requestFullscreen()" data-src="holder.js/500x500/auto" alt="500x500" src="images/mohs_map_baker.PNG" data-holder-rendered="true" style="width: 500px; height: 500px;">
+              </div>
+            </div>
+    
+            <hr class="featurette-divider" style="margin: 5rem 0 5rem 0;">
+  
+          <hr class="featurette-divider" style="margin: 5rem 0 2rem 0;">
+  
+          <!-- /END THE FEATURETTES -->
+  
+        </div><!-- /.container -->
+    </main>
+
+    <footer class="text-body-secondary py-0">
+      <div class="container">
+        <p class="float-end mb-1">
+          <button type="button" class="btn btn-outline-secondary" onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+        </p>
+        <p class="mb-0"><a href="https://www.linkedin.com/in/kirkland-landry-584857111/" target="_blank">Linkedin</a></p>
+      </div>
+    </footer>
+
+
+
+    <script>// Get the button:
+      let button = document.getElementById("topBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }</script>
+
+
+
+    <!--<script src="./bootstrapfiles/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+  </body></html>
