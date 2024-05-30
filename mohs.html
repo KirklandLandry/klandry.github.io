@@ -49,6 +49,7 @@
             <hr class="featurette-divider" style="margin: 5rem 0 5rem 0;">
   
             <div class="row featurette">
+              <h2 class="featurette-heading">Details</h2>
               <div class="col-md-7">
                 <p class="lead">The MOHS Map baker is used for baking 4 black and white textures into 1 rgba texture. It can bake any 4 textures, but is specialized in baking Metallic (R), Occlusion (G), Height (B), and Smoothness/Roughness (A) textures. Right clicking an image in Unity will show a "Bake" option, this will open the texture in the mohs map baker. It the texture's name matches any of the channel names it will then look for other textures within the folder to try and fill each channel for a MOHS map. By default it looks for the Adobe Substance default export names, but will try to look for any similar names that match. One the textures are loaded, for each channel, you can further transform the channel texture by inverting it, adjusting its strength, or bypassing it if you don't want to use it. Once you're done adjusting the channels, you can then save the combined texture. By default, this is located in the first image's folder and named "first texture name_MOHS". Output texture resolution can also be adjusted up or down, within the limit of Unity's supported image sizes.</p>
               </div>
